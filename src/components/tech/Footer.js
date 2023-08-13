@@ -12,16 +12,14 @@ export class Footer extends Component {
             <Row></Row>
             <Row className="mr-3 mb-2 mt-2">
               <Col>
-                <a href="./impressum">@{lJahr} Cube-Wohnmobile / Impressum</a>
+                <a href="./impressum">{lJahr} Cube-Wohnmobile-Impressum</a>
               </Col>
               <Col>All rights reserved</Col>
-            </Row>
-            <Row></Row>
-            <Row className="mr-3 mb-2 mt-2">
               <Col>
                 <a href="./datenschutz">Datenschutz</a>
               </Col>
             </Row>
+            <Row></Row>
           </Container>
         </div>
       </div>

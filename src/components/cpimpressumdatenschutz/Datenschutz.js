@@ -572,6 +572,9 @@ export class Datenschutz extends Component {
               </Card>
             </Col>
           </Row>
+          <Row className="mr-3 mb-3">
+            <Col> </Col>
+          </Row>
         </Container>
       </div>
     );

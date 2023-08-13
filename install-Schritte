@@ -8,3 +8,6 @@ Schritt 2
 
 sudo yarn add react-bootstrap bootstrap
 
+Schritt 3
+
+sudo yarn add styled-components
