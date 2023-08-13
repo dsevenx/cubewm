@@ -5,3 +5,6 @@ cd cubewm
 npm start
 
 Schritt 2
+
+sudo yarn add react-bootstrap bootstrap
+

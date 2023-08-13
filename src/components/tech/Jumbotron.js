@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import ICE_Bild from "../../assets/ICE_BILD.png";
+import CUBE_ERXLEBEN from "../../assets/CUBE_ERXLEBEN.png";
 
 export class Jumbotron extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export class Jumbotron extends Component {
   render() {
     const Styles = styled.div`
       .jumbo {
-        background: url(${ICE_Bild}) no-repeat;
+        background: url(${CUBE_ERXLEBEN}) no-repeat;
         background-size: cover;
         color: #ccc;
         height: 200px;
