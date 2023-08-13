@@ -25,6 +25,7 @@ export class Main extends Component {
       <div className="page-container">
         <div className="content-wrap">
           <NavigationBar name_user={""}></NavigationBar>
+          <Jumbotron></Jumbotron>
           <Container>
             <Router>
               <Routes>

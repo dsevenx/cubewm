@@ -17,7 +17,7 @@ export class Jumbotron extends Component {
         background: url(${CUBE_ERXLEBEN}) no-repeat;
         background-size: cover;
         color: #ccc;
-        height: 200px;
+        height: 300px;
         position: relativ;
         z-index: -2;
       }
@@ -32,6 +32,10 @@ export class Jumbotron extends Component {
         right: 0;
         z-index: -1;
       }
+
+      #box1 {
+        padding-top: 15px;
+      }
     `;
 
     return (
@@ -42,7 +46,9 @@ export class Jumbotron extends Component {
               <div className="overlay"></div>
               <Container>
                 <h1 align="center">
-                  <font color="black">GreMi-Projektmanager</font>
+                  <font color="black">
+                    <div id="box1">Cube-Wohnmobile</div>
+                  </font>
                 </h1>
               </Container>
             </div>

@@ -24,7 +24,7 @@ export class NavigationBar extends React.Component {
     let lMenu = (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <NavLink href="./kunde">Kunden</NavLink>
+          <NavLink href="./home">Start</NavLink>
           <NavLink href="./ansprechpartner">Ansprechpartner</NavLink>
           <NavLink href="./projekte">Projekte</NavLink>
         </Nav>
