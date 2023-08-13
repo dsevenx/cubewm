@@ -11,6 +11,7 @@ import { Footer } from "./components/tech/Footer";
 // eigene Komponenten
 import { Impressum } from "./components/cpimpressumdatenschutz/Impressum";
 import { Datenschutz } from "./components/cpimpressumdatenschutz/Datenschutz";
+import { Startkarten } from "./components/Startkarten";
 
 export class Main extends Component {
   constructor(props) {
@@ -34,6 +35,8 @@ export class Main extends Component {
               </Routes>
             </Router>
           </Container>
+          <Startkarten></Startkarten>
+          <h1> </h1>
         </div>
         <Footer />
       </div>

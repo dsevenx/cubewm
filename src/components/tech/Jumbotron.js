@@ -34,7 +34,7 @@ export class Jumbotron extends Component {
       }
 
       #box1 {
-        padding-top: 15px;
+        padding-top: 7px;
       }
     `;
 
