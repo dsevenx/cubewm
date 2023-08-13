@@ -1,0 +1,7 @@
+Schritt 1
+
+npx create-react-app cubewm
+cd cubewm
+npm start
+
+Schritt 2
