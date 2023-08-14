@@ -50,7 +50,12 @@ export class Wohnmobileliste extends Component {
               typ: "zahl",
             },
             {
-              key: "kuehlschrank",
+              key: "Kühlschrank",
+              wert: "vorhanden",
+              typ: "text",
+            },
+            {
+              key: "SAT-Empfang",
               wert: "vorhanden",
               typ: "text",
             },
@@ -97,7 +102,7 @@ export class Wohnmobileliste extends Component {
               typ: "zahl",
             },
             {
-              key: "kuehlschrank",
+              key: "Kühlschrank",
               wert: "vorhanden",
               typ: "text",
             },
