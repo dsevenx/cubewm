@@ -12,6 +12,7 @@ import { Footer } from "./components/tech/Footer";
 import { Impressum } from "./components/cpimpressumdatenschutz/Impressum";
 import { Datenschutz } from "./components/cpimpressumdatenschutz/Datenschutz";
 import { Startkarten } from "./components/Startkarten";
+import { Wohnmobileliste } from "./components/cpwohnmobilereservierung/Wohnmobileliste";
 
 export class Main extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ export class Main extends Component {
             </Router>
           </Container>
           <Startkarten></Startkarten>
+          <Wohnmobileliste></Wohnmobileliste>
           <h1> </h1>
         </div>
         <Footer />
