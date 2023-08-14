@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { Table } from "react-bootstrap";
-import { Button, ButtonGroup, ButtonToolbar, Image } from "react-bootstrap";
-import { Form } from "react-bootstrap";
-import { Navigate } from "react-router-dom";
+import { ButtonGroup, ButtonToolbar } from "react-bootstrap";
+
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 
 import { Row, Col, Container } from "react-bootstrap";
 import { GetKleineTabelleUebersicht } from "../tech/GetKleineTabelleUebersicht";
+import Wohnmobilreservieren from "./Wohnmobilreservieren";
 
 import IMG_LMC_B_MAIN from "../../assets/LMC/IMG_B_MAIN.jpeg";
 import IMG_LMC_B_01 from "../../assets/LMC/IMG_B_01.jpeg";
@@ -38,7 +37,7 @@ export class Wohnmobileliste extends Component {
     this.setState({
       Wohnmobileimstate: [
         {
-          id: 10,
+          id: "VW",
           ausstattung: [
             {
               key: "Motor",
@@ -85,7 +84,7 @@ export class Wohnmobileliste extends Component {
           preis: "ab 150 Euro pro Tag",
         },
         {
-          id: 20,
+          id: "LMC",
           ausstattung: [
             {
               key: "Motor",
@@ -151,38 +150,45 @@ export class Wohnmobileliste extends Component {
             <Col xs={10} id="page-content-wrapper">
               <div className="p-3 mb-2 bg-white text-dark">
                 <div>
-                  <Table className="mt-4" striped bordered hover siz="sm">
+                  <table class="table">
                     <thead>
-                      <tr>
-                        <th></th>
-                        <th>Ausstattung</th>
-                        <th>Preis</th>
-                        <th></th>
+                      <tr class="row">
+                        <th class="col-sm-6"></th>
+                        <th class="col-sm-2"> Ausstattung </th>
+                        <th class="col-sm-2"> Preis </th>
+                        <th class="col-sm-2"> </th>
                       </tr>
                     </thead>
+
                     <tbody>
                       {this.state.Wohnmobileimstate.map((Wohnmobil) => (
-                        <tr key={Wohnmobil.id}>
-                          <td>
+                        <tr key={Wohnmobil.id} class="row">
+                          <td class="col-sm-6">
                             <ImageGallery
                               items={Wohnmobil.images}
                               showFullscreenButton={false}
                               showPlayButton={false}
                             />
                           </td>
-                          <td>
+                          <td class="col-sm-2">
                             {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}
                           </td>
-                          <td>{Wohnmobil.preis}</td>
-                          <td>
+                          <td class="col-sm-2">{Wohnmobil.preis}</td>
+                          <td class="col-sm-2">
                             <ButtonToolbar>
-                              <ButtonGroup vertical>xx</ButtonGroup>
+                              <ButtonGroup vertical>
+                                {" "}
+                                <Wohnmobilreservieren
+                                  titel={"Wohnmobil reservieren"}
+                                  id={Wohnmobil.id}
+                                />
+                              </ButtonGroup>
                             </ButtonToolbar>
                           </td>
                         </tr>
                       ))}
                     </tbody>
-                  </Table>
+                  </table>
                 </div>
               </div>
             </Col>

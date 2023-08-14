@@ -1,7 +1,7 @@
 import React from "react";
-import { Nav, Navbar, NavDropdown, NavLink } from "react-bootstrap";
+import { Nav, Navbar, NavLink } from "react-bootstrap"; //  NavDropdown
 import styled from "styled-components";
-import { Row, Col, Container } from "react-bootstrap";
+//import { Row, Col, Container } from "react-bootstrap";
 
 const Styles = styled.div`
   .navbar {
