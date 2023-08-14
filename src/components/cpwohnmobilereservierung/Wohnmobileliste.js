@@ -3,12 +3,26 @@ import { Table } from "react-bootstrap";
 import { Button, ButtonGroup, ButtonToolbar, Image } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
+import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from "react-image-gallery";
 
 import { Row, Col, Container } from "react-bootstrap";
 import { GetKleineTabelleUebersicht } from "../tech/GetKleineTabelleUebersicht";
 
-import IMG_MAIN_LMC from "../../assets/LMC/IMG_MAIN_LMC.jpeg";
-import IMG_MAIN_VW from "../../assets/VW/IMG_MAIN_VW.jpeg";
+import IMG_LMC_B_MAIN from "../../assets/LMC/IMG_B_MAIN.jpeg";
+import IMG_LMC_B_01 from "../../assets/LMC/IMG_B_01.jpeg";
+import IMG_LMC_B_02 from "../../assets/LMC/IMG_B_02.jpeg";
+import IMG_LMC_H_01 from "../../assets/LMC/IMG_H_01.jpeg";
+import IMG_LMC_H_02 from "../../assets/LMC/IMG_H_02.jpeg";
+import IMG_LMC_H_03 from "../../assets/LMC/IMG_H_03.jpeg";
+import IMG_LMC_H_04 from "../../assets/LMC/IMG_H_04.jpeg";
+
+import IMG_VW_B_MAIN from "../../assets/VW/IMG_B_MAIN.jpeg";
+import IMG_VW_B_01 from "../../assets/VW/IMG_B_01.jpeg";
+import IMG_VW_B_02 from "../../assets/VW/IMG_B_02.jpeg";
+import IMG_VW_H_01 from "../../assets/VW/IMG_H_01.jpeg";
+import IMG_VW_H_02 from "../../assets/VW/IMG_H_02.jpeg";
+import IMG_VW_H_03 from "../../assets/VW/IMG_H_03.jpeg";
 
 export class Wohnmobileliste extends Component {
   constructor(props) {
@@ -18,7 +32,6 @@ export class Wohnmobileliste extends Component {
     };
 
     this.refreshWohnmobileListe = this.refreshWohnmobileListe.bind(this);
-    this.getBildMain = this.getBildMain.bind(this);
   }
 
   refreshWohnmobileListe() {
@@ -26,7 +39,6 @@ export class Wohnmobileliste extends Component {
       Wohnmobileimstate: [
         {
           id: 10,
-          imgmain: "IMG_MAIN_VW",
           ausstattung: [
             {
               key: "Motor",
@@ -44,11 +56,36 @@ export class Wohnmobileliste extends Component {
               typ: "text",
             },
           ],
+          images: [
+            {
+              original: IMG_VW_B_MAIN,
+              thumbnail: IMG_VW_B_MAIN,
+            },
+            {
+              original: IMG_VW_B_01,
+              thumbnail: IMG_VW_B_01,
+            },
+            {
+              original: IMG_VW_B_02,
+              thumbnail: IMG_VW_B_02,
+            },
+            {
+              original: IMG_VW_H_01,
+              thumbnail: IMG_VW_H_01,
+            },
+            {
+              original: IMG_VW_H_02,
+              thumbnail: IMG_VW_H_02,
+            },
+            {
+              original: IMG_VW_H_03,
+              thumbnail: IMG_VW_H_03,
+            },
+          ],
           preis: "ab 150 Euro pro Tag",
         },
         {
           id: 20,
-          imgmain: "IMG_MAIN_LMC",
           ausstattung: [
             {
               key: "Motor",
@@ -66,6 +103,36 @@ export class Wohnmobileliste extends Component {
               typ: "text",
             },
           ],
+          images: [
+            {
+              original: IMG_LMC_B_MAIN,
+              thumbnail: IMG_LMC_B_MAIN,
+            },
+            {
+              original: IMG_LMC_B_01,
+              thumbnail: IMG_LMC_B_01,
+            },
+            {
+              original: IMG_LMC_B_02,
+              thumbnail: IMG_LMC_B_02,
+            },
+            {
+              original: IMG_LMC_H_01,
+              thumbnail: IMG_LMC_H_01,
+            },
+            {
+              original: IMG_LMC_H_02,
+              thumbnail: IMG_LMC_H_02,
+            },
+            {
+              original: IMG_LMC_H_03,
+              thumbnail: IMG_LMC_H_03,
+            },
+            {
+              original: IMG_LMC_H_04,
+              thumbnail: IMG_LMC_H_04,
+            },
+          ],
           preis: "ab 180 Euro pro Tag",
         },
       ],
@@ -74,30 +141,6 @@ export class Wohnmobileliste extends Component {
 
   componentDidMount() {
     this.refreshWohnmobileListe();
-  }
-
-  getBildMain(pName) {
-    if (pName === "IMG_MAIN_VW") {
-      return (
-        <Image
-          src={IMG_MAIN_VW}
-          alt="es fehlt IMG_3"
-          fluid
-          className="card-img-top"
-        />
-      );
-    }
-    if (pName === "IMG_MAIN_LMC") {
-      return (
-        <Image
-          src={IMG_MAIN_LMC}
-          alt="es fehlt IMG_3"
-          fluid
-          className="card-img-top"
-        />
-      );
-    }
-    return pName;
   }
 
   render() {
@@ -120,7 +163,13 @@ export class Wohnmobileliste extends Component {
                     <tbody>
                       {this.state.Wohnmobileimstate.map((Wohnmobil) => (
                         <tr key={Wohnmobil.id}>
-                          <td>{this.getBildMain(Wohnmobil.imgmain)}</td>
+                          <td>
+                            <ImageGallery
+                              items={Wohnmobil.images}
+                              showFullscreenButton={false}
+                              showPlayButton={false}
+                            />
+                          </td>
                           <td>
                             {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}
                           </td>

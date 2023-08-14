@@ -11,3 +11,7 @@ sudo yarn add react-bootstrap bootstrap
 Schritt 3
 
 sudo yarn add styled-components
+
+Schritt 4
+
+yarn add react-image-gallery
