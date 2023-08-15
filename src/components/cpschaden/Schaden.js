@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import "./Schaden.css";
+import { ButtonGroup, ButtonToolbar } from "react-bootstrap";
+import Schadenmeldung from "./Schadenmeldung";
 
 export class Schaden extends Component {
   render() {
@@ -161,12 +163,18 @@ export class Schaden extends Component {
                 </Row>
               </Container>
             </Col>
-            <Col>XX</Col>
+            <Col>
+              <Schadenmeldung></Schadenmeldung>
+            </Col>
           </Row>
           <Row className="mr-3 mb-3">
             <Col>
-              {" "}
-              <p> </p>
+              <ButtonToolbar>
+                <ButtonGroup vertical>
+                  {" "}
+                  <Schadenmeldung />
+                </ButtonGroup>
+              </ButtonToolbar>
             </Col>
           </Row>
         </Container>
