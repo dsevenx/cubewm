@@ -87,8 +87,9 @@ export class Startkarten extends Component {
                   </Card.Title>
                   <Card.Text className="mb-3">
                     <p>
-                      Sie haben Fragen zur Wohnmobilvermietung, dann bitte{"  "}
-                      <Card.Link href="./meldung"> hier entlang </Card.Link>
+                      Sie sind neu beim Caravaning, dann haben wir ein paar
+                      Tipps für Sie - bitte{"  "}
+                      <Card.Link href="./tipps"> hier entlang </Card.Link>
                       <p>
                         {" "}
                         <br />

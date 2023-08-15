@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #b2b2b2;
+  --bs-navbar-padding-y: 0;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #1f1f1f;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #ffebcd;
+}
+
+.schrift_slogan {
+  padding-top: 4px;
+  font-size: 90%;
+}
+
+.schrift_wohnmobile {
+  font-size: 110%;
+}

@@ -13,6 +13,7 @@ import { Impressum } from "./components/cpimpressumdatenschutz/Impressum";
 import { Datenschutz } from "./components/cpimpressumdatenschutz/Datenschutz";
 import { Startkarten } from "./components/Startkarten";
 import { Wohnmobileliste } from "./components/cpwohnmobilereservierung/Wohnmobileliste";
+import { Tipps } from "./components/cptipps/Tipps";
 
 export class Main extends Component {
   constructor(props) {
@@ -25,8 +26,8 @@ export class Main extends Component {
   render() {
     return (
       <div className="page-container">
+        <NavigationBar name_user={""}></NavigationBar>
         <div className="content-wrap">
-          <NavigationBar name_user={""}></NavigationBar>
           <Jumbotron></Jumbotron>
           <Container>
             <Router>
@@ -34,6 +35,7 @@ export class Main extends Component {
                 <Route path="/impressum" element={<Impressum />} />
                 <Route path="/datenschutz" element={<Datenschutz />} />
                 <Route path="/wohnmobile" element={<Wohnmobileliste />} />
+                <Route path="/tipps" element={<Tipps />} />
                 <Route path="/home" element={<Startkarten />} />
                 <Route path="/" element={<Startkarten />} />
               </Routes>
