@@ -33,11 +33,12 @@ export class Main extends Component {
               <Routes>
                 <Route path="/impressum" element={<Impressum />} />
                 <Route path="/datenschutz" element={<Datenschutz />} />
+                <Route path="/wohnmobile" element={<Wohnmobileliste />} />
+                <Route path="/home" element={<Startkarten />} />
+                <Route path="/" element={<Startkarten />} />
               </Routes>
             </Router>
           </Container>
-          <Startkarten></Startkarten>
-          <Wohnmobileliste></Wohnmobileliste>
           <h1> </h1>
         </div>
         <Footer />

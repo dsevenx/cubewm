@@ -25,8 +25,7 @@ export class NavigationBar extends React.Component {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
           <NavLink href="./home">Start</NavLink>
-          <NavLink href="./ansprechpartner">Ansprechpartner</NavLink>
-          <NavLink href="./projekte">Projekte</NavLink>
+          <NavLink href="./wohnmobile">Wohnmobile</NavLink>
         </Nav>
       </Navbar.Collapse>
     );

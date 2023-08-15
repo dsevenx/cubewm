@@ -41,10 +41,7 @@ export class Startkarten extends Component {
                   <Card.Text className="mb-3">
                     <p>
                       Zu unseren Wohnmobilen geht es
-                      <Card.Link href="./wohnmobilliste">
-                        {" "}
-                        hier entlang
-                      </Card.Link>
+                      <Card.Link href="./wohnmobile"> hier entlang</Card.Link>
                       <p>
                         {" "}
                         <br /> <br />
