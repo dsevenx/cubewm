@@ -14,6 +14,7 @@ import { Datenschutz } from "./components/cpimpressumdatenschutz/Datenschutz";
 import { Startkarten } from "./components/Startkarten";
 import { Wohnmobileliste } from "./components/cpwohnmobilereservierung/Wohnmobileliste";
 import { Tipps } from "./components/cptipps/Tipps";
+import { Schaden } from "./components/cpschaden/Schaden";
 
 export class Main extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ export class Main extends Component {
                 <Route path="/impressum" element={<Impressum />} />
                 <Route path="/datenschutz" element={<Datenschutz />} />
                 <Route path="/wohnmobile" element={<Wohnmobileliste />} />
+                <Route path="/schaden" element={<Schaden />} />
                 <Route path="/tipps" element={<Tipps />} />
                 <Route path="/home" element={<Startkarten />} />
                 <Route path="/" element={<Startkarten />} />

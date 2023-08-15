@@ -61,13 +61,13 @@ export class Startkarten extends Component {
                 />
                 <Card.Body>
                   <Card.Title>
-                    <h3>Schaden / Reklamation</h3>
+                    <h3>Schaden</h3>
                   </Card.Title>
                   <Card.Text className="mb-3">
                     <p>
                       Sie haben ein Wohnmobil von uns gemietet und haben ein
-                      Schaden oder eine Reklamtion, dann bitte{" "}
-                      <Card.Link href="./meldung"> hier entlang </Card.Link>
+                      Schaden , dann bitte{" "}
+                      <Card.Link href="./schaden"> hier entlang </Card.Link>
                     </p>
                   </Card.Text>
                 </Card.Body>
