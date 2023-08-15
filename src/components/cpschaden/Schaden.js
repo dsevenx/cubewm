@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import "./Schaden.css";
-import { ButtonGroup, ButtonToolbar } from "react-bootstrap";
 import Schadenmeldung from "./Schadenmeldung";
 
 export class Schaden extends Component {
