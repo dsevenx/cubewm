@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Row, Col, Button, Form, Modal } from "react-bootstrap";
+import { GetDatum } from "../tech/GetDatum";
 
 export class Wohnmobilreservieren extends React.Component {
   constructor(props) {
@@ -8,32 +9,109 @@ export class Wohnmobilreservieren extends React.Component {
 
     this.state = {
       showHide: false,
+      beginn: "",
+      ende: "",
+      name: "",
+      vorname: "",
+      mobilnummer: "",
     };
 
     this.handleSubmitWohnmobilreservieren = this.handleSubmitWohnmobilreservieren.bind(
       this
     );
     this.handleModalShowHide = this.handleModalShowHide.bind(this);
+    this.istZuDisablen = this.istZuDisablen.bind(this);
   }
 
   handleModalShowHide() {
     this.setState({ showHide: !this.state.showHide });
   }
 
+  onChangeBeginn(event) {
+    if (event.target.value && event.target.value !== "") {
+      this.setState({ beginn: GetDatum(event.target.value) });
+    } else {
+      this.setState({ beginn: "" });
+    }
+  }
+  onChangeEnde(event) {
+    if (event.target.value && event.target.value !== "") {
+      this.setState({ ende: GetDatum(event.target.value) });
+    } else {
+      this.setState({ ende: "" });
+    }
+  }
+  onChangeName(event) {
+    if (event.target.value && event.target.value !== "") {
+      this.setState({ name: event.target.value });
+    } else {
+      this.setState({ name: "" });
+    }
+  }
+  onChangeVorname(event) {
+    if (event.target.value && event.target.value !== "") {
+      this.setState({ vorname: event.target.value });
+    } else {
+      this.setState({ vorname: "" });
+    }
+  }
+  onChangeMobilnummer(event) {
+    if (
+      event.target.value &&
+      event.target.value !== "" &&
+      event.target.value !== "+49"
+    ) {
+      this.setState({ mobilnummer: event.target.value });
+    } else {
+      this.setState({ mobilnummer: "" });
+    }
+  }
+
+  istZuDisablen() {
+    if (
+      this.state.beginn !== "" &&
+      this.state.ende !== "" &&
+      this.state.name !== "" &&
+      this.state.vorname !== "" &&
+      this.state.mobilnummer !== ""
+    ) {
+      return false;
+    }
+
+    return true;
+  }
+
   handleSubmitWohnmobilreservieren(event) {
     event.preventDefault();
 
     window.open(
-      "mailto:webmaster@immo-service-app.com?subject=Registrierung bei immo-service-app.com&body=Liebes immo-service-app.com-Team, %0D%0A %0D%0Abitte legen Sie einen Account für unsere Wohnungsgesellschaft mit dem %0D%0A %0D%0A" +
-        "Namen        %0D%0A" +
-        "Straße       %0D%0A" +
-        "Ort          %0D%0A" +
-        "Postleitzahl %0D%0A" +
+      "mailto:thomas@cube-wohnmobile.de?subject=Reservierung Wohmobil " +
+        this.props.id +
+        " bei www.cube-wohnmobile.de&body=Liebes cube-wohnmobile-Team, %0D%0A %0D%0A" +
+        "wir würden gern das Wohnmobil " +
+        this.props.id +
+        " für den Zeitraum %0D%0A %0D%0A" +
+        "vom " +
+        this.state.beginn +
+        " bis " +
+        this.state.ende +
         "%0D%0A" +
-        "Wir benötigen zum Start 1 Nutzer." +
+        "%0D%0A" +
+        "reservieren." +
         "%0D%0A" +
         "%0D%0A" +
-        "Vielen Dank "
+        "Bitte teilen Sie uns den zu erwartenden Gesamtpreis mit." +
+        "%0D%0A" +
+        "%0D%0A" +
+        "Wir sind erreichbar unter " +
+        event.target.mobilnummer.value +
+        "." +
+        "%0D%0A" +
+        "%0D%0A" +
+        "Vielen Dank und Viele Grüße " +
+        event.target.vorname.value +
+        " " +
+        event.target.name.value
     );
   }
 
@@ -65,17 +143,18 @@ export class Wohnmobilreservieren extends React.Component {
               <Row>
                 <Col sm={12}>
                   <Form onSubmit={this.handleSubmitWohnmobilreservieren}>
-                    <Form.Group controlId="Name">
+                    <Form.Group controlId="name">
                       <Form.Label className="mb-2 labelfarbe">Name</Form.Label>
                       <Form.Control
                         className="mb-2"
                         type="text"
                         name="name"
                         maxLength="100"
+                        onChange={this.onChangeName.bind(this)}
                       />
                     </Form.Group>
 
-                    <Form.Group controlId="Vorname">
+                    <Form.Group controlId="vorname">
                       <Form.Label className="mb-2 labelfarbe">
                         Vorname
                       </Form.Label>
@@ -84,6 +163,7 @@ export class Wohnmobilreservieren extends React.Component {
                         type="text"
                         name="vorname"
                         maxLength="100"
+                        onChange={this.onChangeVorname.bind(this)}
                       />
                     </Form.Group>
 
@@ -97,6 +177,7 @@ export class Wohnmobilreservieren extends React.Component {
                         name="mobilnummer"
                         maxLength="100"
                         defaultValue="+49"
+                        onChange={this.onChangeMobilnummer.bind(this)}
                       />
                     </Form.Group>
 
@@ -108,7 +189,7 @@ export class Wohnmobilreservieren extends React.Component {
                         className="mb-2"
                         type="date"
                         name="beginn"
-                        defaultValue={this.props.beginn}
+                        onChange={this.onChangeBeginn.bind(this)}
                       />
                     </Form.Group>
 
@@ -118,17 +199,22 @@ export class Wohnmobilreservieren extends React.Component {
                         className="mb-2"
                         type="date"
                         name="ende"
-                        defaultValue={this.props.ende}
+                        onChange={this.onChangeEnde.bind(this)}
                       />
                     </Form.Group>
 
                     <Form.Group controlId="saveButton">
                       <Form.Label className="mb-2 labelfarbe">
                         ACHTUNG: Erst mit dem Absenden der Email wird der
-                        Reservierungswunsch finalisiert - wir antworten auf die
-                        Absender-Emailadresse
+                        Reservierungswunsch abgeschlossen. Wir antworten auf die
+                        Absender-Emailadresse.
                       </Form.Label>
-                      <Button variant="primary" type="submit" className="mt-2">
+                      <Button
+                        variant="primary"
+                        type="submit"
+                        className="mt-2"
+                        disabled={this.istZuDisablen()}
+                      >
                         diesen Reservierungswunsch an Cube-Wohnmobile senden
                         (Email-Client öffnet sich)
                       </Button>
