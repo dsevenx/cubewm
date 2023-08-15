@@ -164,17 +164,16 @@ export class Schaden extends Component {
               </Container>
             </Col>
             <Col>
-              <Schadenmeldung></Schadenmeldung>
+              <div class="col-xs-1" align="center">
+                <Schadenmeldung></Schadenmeldung>
+              </div>
             </Col>
           </Row>
           <Row className="mr-3 mb-3">
             <Col>
-              <ButtonToolbar>
-                <ButtonGroup vertical>
-                  {" "}
-                  <Schadenmeldung />
-                </ButtonGroup>
-              </ButtonToolbar>
+              {" "}
+              <p> </p>
+              <br />
             </Col>
           </Row>
         </Container>
