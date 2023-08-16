@@ -83,7 +83,7 @@ export class Startkarten extends Component {
                 />
                 <Card.Body>
                   <Card.Title>
-                    <h3>Sonstiges</h3>
+                    <h3>Tipps</h3>
                   </Card.Title>
                   <Card.Text className="mb-3">
                     <p>
