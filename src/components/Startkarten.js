@@ -40,12 +40,8 @@ export class Startkarten extends Component {
 
                   <Card.Text className="mb-3">
                     <p>
-                      Zu unseren Wohnmobilen geht es
+                      Zu unseren vermietbaren Wohnmobilen geht es
                       <Card.Link href="./wohnmobile"> hier entlang</Card.Link>
-                      <p>
-                        {" "}
-                        <br /> <br />
-                      </p>
                     </p>
                   </Card.Text>
                 </Card.Body>
@@ -90,10 +86,6 @@ export class Startkarten extends Component {
                       Sie sind neu beim Caravaning, dann haben wir ein paar
                       Tipps für Sie - bitte{"  "}
                       <Card.Link href="./tipps"> hier entlang </Card.Link>
-                      <p>
-                        {" "}
-                        <br />
-                      </p>
                     </p>
                   </Card.Text>
                 </Card.Body>
