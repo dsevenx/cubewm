@@ -12,13 +12,13 @@ export class Startkarten extends Component {
           <Row className="mr-3 mb-3">
             <Col>
               <h3>
-                Entdecke unvergessliche Abenteuer mit Cube-Wohnmobilen! Unsere
-                top-modernen Wohnmobile bieten dir die Freiheit, die Schönheit
+                Entdecke unvergessliche Abenteuer mit Cube-Wohnmobile! Unsere
+                top-modernen Wohnmobile bieten Dir die Freiheit, die Schönheit
                 der Regionen in vollem Komfort zu erkunden. Ob malerische
-                Naturorte oder charmante Städte – du entscheidest, wohin dich
-                deine Reise führt. Genieße den Luxus unserer bestens
+                Naturorte oder charmante Städte – Du entscheidest, wohin Dich
+                Deine Reise führt. Genieße den Luxus unserer bestens
                 ausgestatteten Wohnmobile, die Euch ein Zuhause unterwegs
-                bieten. Cube- Wohnmobilve macht es leicht von Magdeburg /
+                bieten. Cube-Wohnmobile macht es leicht von Magdeburg /
                 Sachsen-Anhalt aus, den Alltag hinter sich zu lassen und neue
                 Horizonte zu entdecken. Erlebe den Reiz des Caravanning mit
                 Cube-Wohnmobile. Dein Abenteuer beginnt hier!
