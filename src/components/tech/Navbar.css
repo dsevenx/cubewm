@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #b2b2b2;
+  background-color: #0640a8;
   --bs-navbar-padding-y: 0;
 }
 
@@ -16,9 +16,13 @@
 .schrift_slogan {
   padding-top: 4px;
   font-size: 90%;
+  background-color: #0640a8;
+  color: #ffffff;
 }
 
 .schrift_wohnmobile {
   font-size: 110%;
   padding-right: 10px;
+  background-color: #0640a8;
+  color: #ffffff;
 }

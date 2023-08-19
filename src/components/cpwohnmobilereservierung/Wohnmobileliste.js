@@ -45,19 +45,64 @@ export class Wohnmobileliste extends Component {
               typ: "zahl",
             },
             {
+              key: "Erstzulassung",
+              wert: "2023-07-01",
+              typ: "datum",
+            },
+            {
               key: "Anzahl Betten",
-              wert: "2",
+              wert: "4",
               typ: "zahl",
             },
             {
-              key: "Kühlschrank",
-              wert: "vorhanden",
+              key: "Plätze mit Gurt",
+              wert: "4",
+              typ: "zahl",
+            },
+            {
+              key: "Km für 7 Tage",
+              wert: "3000",
+              typ: "zahl",
+            },
+            {
+              key: "Selbstbeteiligung Kasko",
+              wert: "1000",
+              typ: "zahl",
+            },
+            {
+              key: "TV mit Automatik",
+              wert: "",
               typ: "text",
             },
             {
-              key: "SAT-Empfang",
-              wert: "vorhanden",
+              key: "zur SAT-Antenne",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Navi-System",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Rückfahrkamera",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Küche mit Geschirr,",
+              wert: "",
               typ: "text",
+            },
+            {
+              key: "Besteck, Töpfe und",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Pfanne",
+              wert: "",
+              typ: "texto",
             },
           ],
           images: [
@@ -86,25 +131,85 @@ export class Wohnmobileliste extends Component {
               thumbnail: IMG_VW_H_03,
             },
           ],
-          preis: "ab 150 Euro pro Tag",
+          preis: "ab 105 Euro pro Tag",
         },
         {
           id: "LMC",
           ausstattung: [
             {
               key: "Motor",
-              wert: "180 KW",
+              wert: "120 KW",
               typ: "zahl",
+            },
+            {
+              key: "Erstzulassung",
+              wert: "2023-06-01",
+              typ: "datum",
             },
             {
               key: "Anzahl Betten",
-              wert: "4",
+              wert: "3",
               typ: "zahl",
             },
             {
-              key: "Kühlschrank",
-              wert: "vorhanden",
+              key: "Plätze mit Gurt",
+              wert: "3",
+              typ: "zahl",
+            },
+            {
+              key: "Km für 7 Tage",
+              wert: "2100",
+              typ: "zahl",
+            },
+            {
+              key: "Selbstbeteiligung Kasko",
+              wert: "1000",
+              typ: "zahl",
+            },
+            {
+              key: "TV mit Automatik",
+              wert: "",
               typ: "text",
+            },
+            {
+              key: "zur SAT-Antenne",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Navi-System",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Rückfahrkamera",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Küche mit Geschirr,",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Besteck, Töpfe und",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Pfanne, Kühlschrank",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Photovoltaik",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Dusche",
+              wert: "",
+              typ: "texto",
             },
           ],
           images: [
@@ -159,8 +264,8 @@ export class Wohnmobileliste extends Component {
                     <thead>
                       <tr class="row">
                         <th class="col-sm-6"></th>
-                        <th class="col-sm-2"> Ausstattung </th>
-                        <th class="col-sm-2"> Preis </th>
+                        <th class="col-sm-3"> Ausstattung </th>
+                        <th class="col-sm-1"> Preis </th>
                         <th class="col-sm-2"> </th>
                       </tr>
                     </thead>
@@ -175,10 +280,10 @@ export class Wohnmobileliste extends Component {
                               showPlayButton={false}
                             />
                           </td>
-                          <td class="col-sm-2">
+                          <td class="col-sm-3">
                             {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}
                           </td>
-                          <td class="col-sm-2">{Wohnmobil.preis}</td>
+                          <td class="col-sm-1">{Wohnmobil.preis}</td>
                           <td class="col-sm-2">
                             <ButtonToolbar>
                               <ButtonGroup vertical>

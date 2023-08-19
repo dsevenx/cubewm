@@ -12,14 +12,16 @@ export class Startkarten extends Component {
           <Row className="mr-3 mb-3">
             <Col>
               <h3>
-                Wir sind der Wohnmobilevermieter für Sachsenanhalt. Sed ut
-                perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui
+                Entdecke unvergessliche Abenteuer mit Cube-Wohnmobilen! Unsere
+                top-modernen Wohnmobile bieten dir die Freiheit, die Schönheit
+                der Regionen in vollem Komfort zu erkunden. Ob malerische
+                Naturorte oder charmante Städte – du entscheidest, wohin dich
+                deine Reise führt. Genieße den Luxus unserer bestens
+                ausgestatteten Wohnmobile, die Euch ein Zuhause unterwegs
+                bieten. Cube- Wohnmobilve macht es leicht von Magdeburg /
+                Sachsen-Anhalt aus, den Alltag hinter sich zu lassen und neue
+                Horizonte zu entdecken. Erlebe den Reiz des Caravanning mit
+                Cube-Wohnmobile. Dein Abenteuer beginnt hier!
               </h3>
             </Col>
           </Row>

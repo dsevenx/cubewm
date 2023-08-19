@@ -1,5 +1,6 @@
 .main-footer {
-  background-color: #b2b2b2;
+  background-color: #0640a8;
+  color: #ffffff;
 }
 
 .main-footer-all {
@@ -8,5 +9,6 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: #b2b2b2;
+  background-color: #0640a8;
+  color: #ffffff;
 }
