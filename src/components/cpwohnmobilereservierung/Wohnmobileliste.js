@@ -303,6 +303,13 @@ export class Wohnmobileliste extends Component {
               </div>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <p>
+                <br></br>{" "}
+              </p>
+            </Col>
+          </Row>
         </Container>
       </div>
     );
