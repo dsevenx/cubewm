@@ -111,7 +111,21 @@ export class Wohnmobilreservieren extends React.Component {
         "Vielen Dank und Viele Grüße " +
         event.target.vorname.value +
         " " +
-        event.target.name.value
+        event.target.name.value +
+        "%0D%0A" +
+        "%0D%0A" +
+        "P.S.  Anfahrtsbeschreibung: " +
+        "Sie finden uns an der Autobahn A2, zwischen den Abfahrten Uhrsleben und Alleringersleben." +
+        "%0D%0A" +
+        "%0D%0A" +
+        "Aus Richtung Berlin kommend, Abfahrt Uhrsleben nehmen, an der Abfahrt rechts und der Beschilderung Richtung Erxleben folgen: " +
+        "%0D%0A" +
+        "https://goo.gl/maps/D7ZSMzvu9f6L42tf6" +
+        "%0D%0A" +
+        "%0D%0A" +
+        "Aus Richtung Hannover nehmen Sie die Ausfahrt Alleringersleben, biegen rechts ab und am Ende der Straße nach rechts auf die Bundesstraße 1. Der B1 folgen finden Sie uns im Ortskern gegenüber dem Edeka-Parkplatz : " +
+        "%0D%0A" +
+        "https://goo.gl/maps/D7ZSMzvu9f6L42tf6"
     );
   }
 

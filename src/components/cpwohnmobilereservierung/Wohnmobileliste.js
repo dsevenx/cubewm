@@ -131,7 +131,7 @@ export class Wohnmobileliste extends Component {
               thumbnail: IMG_VW_H_03,
             },
           ],
-          preis: "ab 105 Euro pro Tag",
+          preis: "ab 99€ je nach Saison",
         },
         {
           id: "LMC",
@@ -242,7 +242,7 @@ export class Wohnmobileliste extends Component {
               thumbnail: IMG_LMC_H_04,
             },
           ],
-          preis: "ab 180 Euro pro Tag",
+          preis: "ab 99€ je nach Saison",
         },
       ],
     });

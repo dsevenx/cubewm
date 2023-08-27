@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Card, Row, Col, Image } from "react-bootstrap";
 import IMG_1 from "../assets/IMG_1.png";
-import IMG_2 from "../assets/IMG_2.jpeg";
+import IMG_2 from "../assets/IMG_2.jpg";
 import IMG_3 from "../assets/IMG_3.png";
 
 export class Startkarten extends Component {
