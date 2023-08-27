@@ -333,11 +333,31 @@ export class Wohnmobileliste extends Component {
           preis: "ab 99 € je nach Saison",
         },
         {
-          id: "LMC",
+          id: "Fiat LMC",
           ausstattung: [
             {
               key: "Motor",
-              wert: "120 KW",
+              wert: "103 KW",
+              typ: "zahl",
+            },
+            {
+              key: "Länge",
+              wert: "6.760 mm",
+              typ: "zahl",
+            },
+            {
+              key: "Breite",
+              wert: "2.220 mm",
+              typ: "zahl",
+            },
+            {
+              key: "Höhe",
+              wert: "2.690 mm",
+              typ: "zahl",
+            },
+            {
+              key: "Stehhöhe",
+              wert: "2.XXX mm",
               typ: "zahl",
             },
             {
@@ -346,25 +366,111 @@ export class Wohnmobileliste extends Component {
               typ: "datum",
             },
             {
-              key: "Anzahl Betten",
-              wert: "3",
-              typ: "zahl",
-            },
-            {
               key: "Plätze mit Gurt",
-              wert: "3",
+              wert: "4",
               typ: "zahl",
             },
             {
-              key: "Km für 7 Tage",
-              wert: "2100",
+              key: "zulässiges Gesamtgewicht",
+              wert: "3500 kg",
               typ: "zahl",
+            },
+            {
+              key: "Kraftstoffart",
+              wert: "Diesel",
+              typ: "zahl",
+            },
+            {
+              key: "Schlafplätze",
+              wert: "4",
+              typ: "zahl",
+            },
+            {
+              key: "Bettgröße (LxB)",
+              wert: "2m x 1,60m",
+              typ: "zahl",
+            },
+            {
+              key: "Einzelbetten",
+              wert: "2",
+              typ: "zahl",
+            },
+            {
+              key: "Verehrszeichenerkennung, ",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Abstandsregelautomat, ",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Spurassitent, drehbare Sitze",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Bi-Xenon Scheinwerfer",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "und Fernlichtassistent,",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Elektr. Außenspiegel, beheizbar",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "ESP, ABS, Kamera für vorn und hinten, ",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Einparkhilfe, Tempomat,",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Alarmanlage, Bordcomputer,",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Solaranlage, Navi-System",
+              wert: "",
+              typ: "texto",
             },
             {
               key: "Selbstbeteiligung Kasko",
               wert: "1000",
               typ: "zahl",
             },
+            {
+              key: "Umweltplakette",
+              wert: "grün",
+              typ: "zahl",
+            },
+            {
+              key: "Auto-Kindersitz",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "abgedunkelte Scheiben, ",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Verdunklungsrollos, Vorhänge",
+              wert: "",
+              typ: "texto",
+            },
+
             {
               key: "TV mit Automatik",
               wert: "",
@@ -375,38 +481,86 @@ export class Wohnmobileliste extends Component {
               wert: "",
               typ: "texto",
             },
+
             {
-              key: "Navi-System",
+              key: "4 Campingstühle + Tisch",
               wert: "",
               typ: "texto",
             },
             {
-              key: "Rückfahrkamera",
-              wert: "",
-              typ: "texto",
+              key: "Volumen Frischwassertank",
+              wert: "XXX Liter",
+              typ: "zahl",
             },
             {
-              key: "Küche mit Geschirr,",
+              key: "Volumen Abwassertank",
+              wert: "XXX Liter",
+              typ: "zahl",
+            },
+            {
+              key: "Toilette mit SOG, ",
               wert: "",
               typ: "text",
             },
             {
-              key: "Besteck, Töpfe und",
+              key: "Dusche, Warmwasser",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Standheizung + Gasheizung",
+              wert: "",
+              typ: "texto",
+            },
+            {
+              key: "Anhängerkupplung",
+              wert: "",
+              typ: "texto",
+            },
+
+            {
+              key: "Klimaanlage, Dachfenster,",
               wert: "",
               typ: "text",
             },
             {
-              key: "Pfanne, Kühlschrank",
+              key: "Lüftungsgitter, Ausstellfenster",
               wert: "",
               typ: "texto",
             },
             {
-              key: "Photovoltaik",
+              key: "Küche mit Herd, Geschirr,",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Besteck, Töpfe, Pfanne",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "und Kühlschrank mit Eisfach",
+              wert: "",
+              typ: "texto",
+            },
+
+            {
+              key: "Landstromanschluss, USB,",
+              wert: "",
+              typ: "text",
+            },
+            {
+              key: "Versorgerbatterie, Solarzellen",
               wert: "",
               typ: "texto",
             },
             {
-              key: "Dusche",
+              key: "Fahrradträger",
+              wert: "2",
+              typ: "zahl",
+            },
+            {
+              key: "Kabeltrommel, Auffahrkeile",
               wert: "",
               typ: "texto",
             },
