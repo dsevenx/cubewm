@@ -20,8 +20,9 @@ export class Startkarten extends Component {
                 ausgestatteten Wohnmobile, die Euch ein Zuhause unterwegs
                 bieten. Cube-Wohnmobile macht es leicht von Magdeburg /
                 Sachsen-Anhalt aus, den Alltag hinter sich zu lassen und neue
-                Horizonte zu entdecken. Erlebe den Reiz des Caravanning mit
-                Cube-Wohnmobile. Dein Abenteuer beginnt hier!
+                Horizonte zu entdecken und dies alles ab 99 Euro pro Tag. Erlebe
+                den Reiz des Caravanning mit Cube-Wohnmobile. Dein Abenteuer
+                beginnt hier!
               </h3>
             </Col>
           </Row>

@@ -2,7 +2,7 @@
   background: url("../../assets/CUBE_ERXLEBEN.png") no-repeat;
   background-size: cover;
   color: #ccc;
-  height: 300px;
+  height: 650px;
   position: relativ;
   z-index: -2;
 }
@@ -20,4 +20,6 @@
 
 #box1 {
   padding-top: 7px;
+  font-size: 1.5em;
+  text-shadow: -2px 0 #0640a8, 0 2px #0640a8, 2px 0 #0640a8, 0 -2px #0640a8;
 }

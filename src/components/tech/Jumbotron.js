@@ -18,7 +18,7 @@ export class Jumbotron extends Component {
             <div className="overlay"></div>
             <Container>
               <h1 align="center">
-                <font color="black">
+                <font color="white">
                   <div id="box1">Cube-Wohnmobile</div>
                 </font>
               </h1>
