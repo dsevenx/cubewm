@@ -18,7 +18,7 @@ export class Footer extends Component {
                   </div>
                 </a>
               </Col>
-              <Col>All rights reserved</Col>
+              <Col>all rights reserved</Col>
               <Col>
                 <a href="./datenschutz">
                   {" "}

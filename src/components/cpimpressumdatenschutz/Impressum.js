@@ -4,7 +4,7 @@ import "./impressumdatenschutz.css";
 
 export class Impressum extends Component {
   render() {
-    const lBez = " Cube-Wohnmobile-GmbH ";
+    const lBez = " Cube-Wohnmobile UG ";
 
     return (
       <div className="mt-5 d-flex justify-content-middle">
