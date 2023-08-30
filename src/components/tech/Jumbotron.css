@@ -1,10 +1,22 @@
-.jumbo {
-  background: url("../../assets/CUBE_ERXLEBEN.jpg") no-repeat center;
-  background-size: cover;
-  color: #ccc;
-  height: 650px;
-  position: relativ;
-  z-index: -2;
+@media (min-width: 769px) {
+  .jumbo {
+    background: url("../../assets/CUBE_ERXLEBEN.jpg") no-repeat center;
+    background-size: cover;
+    color: #ccc;
+    height: 650px;
+    position: relativ;
+    z-index: -2;
+  }
+}
+@media (max-width: 768px) {
+  .jumbo {
+    background: url("../../assets/CUBE_ERXLEBEN_MOBIL.jpg") no-repeat center;
+    background-size: cover;
+    color: #ccc;
+    height: 650px;
+    position: relativ;
+    z-index: -2;
+  }
 }
 
 .overlay {
