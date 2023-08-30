@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (orientation: landscape) {
   .jumbo {
     background: url("../../assets/CUBE_ERXLEBEN.jpg") no-repeat center;
     background-size: cover;
@@ -8,7 +8,7 @@
     z-index: -2;
   }
 }
-@media (max-width: 768px) {
+@media (orientation: portrait) {
   .jumbo {
     background: url("../../assets/CUBE_ERXLEBEN_MOBIL.jpg") no-repeat center;
     background-size: cover;
