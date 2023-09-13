@@ -3,8 +3,8 @@ import { ButtonGroup, ButtonToolbar } from "react-bootstrap";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
+import "./Wohnmobileliste.css";
 
-import { Row, Col, Container } from "react-bootstrap";
 import { GetKleineTabelleUebersicht } from "../tech/GetKleineTabelleUebersicht";
 import Wohnmobilreservieren from "./Wohnmobilreservieren";
 
@@ -606,66 +606,102 @@ export class Wohnmobileliste extends Component {
   }
 
   render() {
-    return (
-      <div className="mt-5 d-flex justify-content-middle">
-        <Container>
-          <Row>
-            <Col xs={10} id="page-content-wrapper">
-              <div className="p-3 mb-2 bg-white text-dark">
-                <div>
-                  <table class="table">
-                    <thead>
-                      <tr class="row">
-                        <th class="col-sm-6"></th>
-                        <th class="col-sm-3"> Ausstattung </th>
-                        <th class="col-sm-1"> Preis </th>
-                        <th class="col-sm-2"> </th>
-                      </tr>
-                    </thead>
+    if (window.innerWidth < window.innerHeight) {
+      return (
+        <div className="mt-5 mb-5 d-flex justify-content-center">
+          <table class="table">
+            <thead>
+              <tr class="row">
+                <th class="col-12"></th>
+              </tr>
+            </thead>
 
-                    <tbody>
-                      {this.state.Wohnmobileimstate.map((Wohnmobil) => (
-                        <tr key={Wohnmobil.id} class="row">
-                          <td class="col-sm-6">
-                            <ImageGallery
-                              items={Wohnmobil.images}
-                              showFullscreenButton={false}
-                              showPlayButton={false}
-                            />
-                          </td>
-                          <td class="col-sm-3">
-                            {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}
-                          </td>
-                          <td class="col-sm-1">{Wohnmobil.preis}</td>
-                          <td class="col-sm-2">
-                            <ButtonToolbar>
-                              <ButtonGroup vertical>
-                                {" "}
-                                <Wohnmobilreservieren
-                                  titel={"Wohnmobil reservieren"}
-                                  id={Wohnmobil.id}
-                                />
-                              </ButtonGroup>
-                            </ButtonToolbar>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <p>
-                <br></br>{" "}
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-    );
+            <tbody>
+              {this.state.Wohnmobileimstate.map((Wohnmobil) => (
+                <tr key={Wohnmobil.id} class="row">
+                  <td class="col-12">
+                    <p>
+                      <ImageGallery
+                        items={Wohnmobil.images}
+                        showFullscreenButton={false}
+                        showPlayButton={false}
+                        showThumbnails={false}
+                        showBullets={true}
+                      />
+                    </p>
+                    <p> {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}</p>
+                    <p> {Wohnmobil.preis}</p>
+                    <p>
+                      <ButtonToolbar>
+                        <ButtonGroup vertical>
+                          {" "}
+                          <Wohnmobilreservieren
+                            titel={"Wohnmobil reservieren"}
+                            id={Wohnmobil.id}
+                          />
+                        </ButtonGroup>
+                      </ButtonToolbar>
+                    </p>
+                    <p>
+                      <br></br>
+                    </p>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    } else {
+      return (
+        <div className="mt-5 mb-5 d-flex justify-content-center">
+          <table class="table">
+            <thead>
+              <tr class="row">
+                <th class="col-6"></th>
+                <th class="col-3"> Ausstattung </th>
+                <th class="col-2"> Preis </th>
+                <th class="col-1"> </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {this.state.Wohnmobileimstate.map((Wohnmobil) => (
+                <tr key={Wohnmobil.id} class="row">
+                  <td class="col-6">
+                    <ImageGallery
+                      items={Wohnmobil.images}
+                      showFullscreenButton={false}
+                      showPlayButton={false}
+                      showThumbnails={false}
+                      showBullets={true}
+                    />
+                  </td>
+                  <td class="col-3">
+                    {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}
+                  </td>
+                  <td class="col-2">
+                    <p>{Wohnmobil.preis}</p>
+                    <p>
+                      <ButtonToolbar>
+                        <ButtonGroup vertical>
+                          {" "}
+                          <Wohnmobilreservieren
+                            titel={"Wohnmobil reservieren"}
+                            id={Wohnmobil.id}
+                          />
+                        </ButtonGroup>
+                      </ButtonToolbar>
+                    </p>
+                  </td>
+                  <td class="col-1"> </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
   }
 }
 
