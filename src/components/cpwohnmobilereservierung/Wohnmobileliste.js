@@ -675,6 +675,7 @@ export class Wohnmobileliste extends Component {
                       showPlayButton={false}
                       showThumbnails={false}
                       showBullets={true}
+                      lazyLoad={true}
                     />
                   </td>
                   <td class="col-3">
