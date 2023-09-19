@@ -357,7 +357,7 @@ export class Wohnmobileliste extends Component {
             },
             {
               key: "Stehhöhe",
-              wert: "2.XXX mm",
+              wert: "2.000 mm",
               typ: "zahl",
             },
             {
@@ -382,7 +382,7 @@ export class Wohnmobileliste extends Component {
             },
             {
               key: "Schlafplätze",
-              wert: "4",
+              wert: "2-3",
               typ: "zahl",
             },
             {
@@ -394,21 +394,6 @@ export class Wohnmobileliste extends Component {
               key: "Einzelbetten",
               wert: "2",
               typ: "zahl",
-            },
-            {
-              key: "Verehrszeichenerkennung, ",
-              wert: "",
-              typ: "text",
-            },
-            {
-              key: "Abstandsregelautomat, ",
-              wert: "",
-              typ: "text",
-            },
-            {
-              key: "Spurassitent, drehbare Sitze",
-              wert: "",
-              typ: "texto",
             },
             {
               key: "Bi-Xenon Scheinwerfer",
@@ -451,21 +436,6 @@ export class Wohnmobileliste extends Component {
               typ: "zahl",
             },
             {
-              key: "Umweltplakette",
-              wert: "grün",
-              typ: "zahl",
-            },
-            {
-              key: "Auto-Kindersitz",
-              wert: "",
-              typ: "texto",
-            },
-            {
-              key: "abgedunkelte Scheiben, ",
-              wert: "",
-              typ: "text",
-            },
-            {
               key: "Verdunklungsrollos, Vorhänge",
               wert: "",
               typ: "texto",
@@ -489,12 +459,12 @@ export class Wohnmobileliste extends Component {
             },
             {
               key: "Volumen Frischwassertank",
-              wert: "XXX Liter",
+              wert: "90 Liter",
               typ: "zahl",
             },
             {
               key: "Volumen Abwassertank",
-              wert: "XXX Liter",
+              wert: "90 Liter",
               typ: "zahl",
             },
             {
@@ -550,13 +520,13 @@ export class Wohnmobileliste extends Component {
               typ: "text",
             },
             {
-              key: "Versorgerbatterie, Solarzellen",
+              key: "Versorgerbatterie",
               wert: "",
               typ: "texto",
             },
             {
               key: "Fahrradträger",
-              wert: "2",
+              wert: "3",
               typ: "zahl",
             },
             {
