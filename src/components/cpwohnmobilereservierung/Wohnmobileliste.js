@@ -330,7 +330,7 @@ export class Wohnmobileliste extends Component {
               thumbnail: IMG_VW_H14,
             },
           ],
-          preis: "ab 99 € je nach Saison",
+          preis: "ab 97 € je nach Saison",
         },
         {
           id: "Fiat LMC",
