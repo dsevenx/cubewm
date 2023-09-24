@@ -8,13 +8,18 @@ import "./Wohnmobileliste.css";
 import { GetKleineTabelleUebersicht } from "../tech/GetKleineTabelleUebersicht";
 import Wohnmobilreservieren from "./Wohnmobilreservieren";
 
-import IMG_LMC_B_MAIN from "../../assets/LMC/IMG_B_MAIN.jpeg";
-import IMG_LMC_B_01 from "../../assets/LMC/IMG_B_01.jpeg";
-import IMG_LMC_B_02 from "../../assets/LMC/IMG_B_02.jpeg";
-import IMG_LMC_H_01 from "../../assets/LMC/IMG_H_01.jpeg";
-import IMG_LMC_H_02 from "../../assets/LMC/IMG_H_02.jpeg";
-import IMG_LMC_H_03 from "../../assets/LMC/IMG_H_03.jpeg";
-import IMG_LMC_H_04 from "../../assets/LMC/IMG_H_04.jpeg";
+import IMG_LMC_MAIN from "../../assets/LMC/IMG_MAIN.jpeg";
+import IMG_LMC_H01 from "../../assets/LMC/IMG_H01.jpeg";
+import IMG_LMC_H02 from "../../assets/LMC/IMG_H02.jpeg";
+import IMG_LMC_H03 from "../../assets/LMC/IMG_H03.jpeg";
+import IMG_LMC_H04 from "../../assets/LMC/IMG_H04.jpeg";
+import IMG_LMC_H05 from "../../assets/LMC/IMG_H05.jpeg";
+import IMG_LMC_H06 from "../../assets/LMC/IMG_H06.jpeg";
+import IMG_LMC_H07 from "../../assets/LMC/IMG_H07.jpeg";
+import IMG_LMC_H08 from "../../assets/LMC/IMG_H08.jpeg";
+import IMG_LMC_H09 from "../../assets/LMC/IMG_H09.jpeg";
+import IMG_LMC_H10 from "../../assets/LMC/IMG_H10.jpeg";
+import IMG_LMC_H11 from "../../assets/LMC/IMG_H11.jpeg";
 
 import IMG_VW_MAIN from "../../assets/VW/IMG_MAIN.jpg";
 import IMG_VW_H01 from "../../assets/VW/IMG_H01.jpg";
@@ -537,32 +542,52 @@ export class Wohnmobileliste extends Component {
           ],
           images: [
             {
-              original: IMG_LMC_B_MAIN,
-              thumbnail: IMG_LMC_B_MAIN,
+              original: IMG_LMC_MAIN,
+              thumbnail: IMG_LMC_MAIN,
             },
             {
-              original: IMG_LMC_B_01,
-              thumbnail: IMG_LMC_B_01,
+              original: IMG_LMC_H01,
+              thumbnail: IMG_LMC_H01,
             },
             {
-              original: IMG_LMC_B_02,
-              thumbnail: IMG_LMC_B_02,
+              original: IMG_LMC_H02,
+              thumbnail: IMG_LMC_H02,
             },
             {
-              original: IMG_LMC_H_01,
-              thumbnail: IMG_LMC_H_01,
+              original: IMG_LMC_H03,
+              thumbnail: IMG_LMC_H03,
             },
             {
-              original: IMG_LMC_H_02,
-              thumbnail: IMG_LMC_H_02,
+              original: IMG_LMC_H04,
+              thumbnail: IMG_LMC_H04,
             },
             {
-              original: IMG_LMC_H_03,
-              thumbnail: IMG_LMC_H_03,
+              original: IMG_LMC_H05,
+              thumbnail: IMG_LMC_H05,
             },
             {
-              original: IMG_LMC_H_04,
-              thumbnail: IMG_LMC_H_04,
+              original: IMG_LMC_H06,
+              thumbnail: IMG_LMC_H06,
+            },
+            {
+              original: IMG_LMC_H07,
+              thumbnail: IMG_LMC_H07,
+            },
+            {
+              original: IMG_LMC_H08,
+              thumbnail: IMG_LMC_H08,
+            },
+            {
+              original: IMG_LMC_H09,
+              thumbnail: IMG_LMC_H09,
+            },
+            {
+              original: IMG_LMC_H10,
+              thumbnail: IMG_LMC_H10,
+            },
+            {
+              original: IMG_LMC_H11,
+              thumbnail: IMG_LMC_H11,
             },
           ],
           preis: "ab 99 € je nach Saison",
