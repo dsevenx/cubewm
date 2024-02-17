@@ -137,6 +137,7 @@ export class Wohnmobilreservieren extends React.Component {
         <Button
           variant="primary"
           size="sm"
+          disabled="true"
           onClick={() => {
             this.handleModalShowHide();
           }}

@@ -20,3 +20,9 @@
 .labelfarbe {
   color: #888888;
 }
+
+.eilmeldung {
+  font-size: 200%;
+  color: #ff0000;
+  font-weight: 400;
+}

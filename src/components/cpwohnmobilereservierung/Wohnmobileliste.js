@@ -47,6 +47,11 @@ export class Wohnmobileliste extends Component {
   }
 
   refreshWohnmobileListe() {
+    let lPreis97 = "ausgebucht bis 2025";
+    let lPreis99 = "ausgebucht bis 2025";
+    //let lPreis97 = "ab 97 € je nach Saison";
+    //let lPreis99 = "ab 99 € je nach Saison";
+
     this.setState({
       Wohnmobileimstate: [
         {
@@ -335,7 +340,7 @@ export class Wohnmobileliste extends Component {
               thumbnail: IMG_VW_H14,
             },
           ],
-          preis: "ab 97 € je nach Saison",
+          preis: lPreis97,
         },
         {
           id: "Fiat LMC",
@@ -590,7 +595,7 @@ export class Wohnmobileliste extends Component {
               thumbnail: IMG_LMC_H11,
             },
           ],
-          preis: "ab 99 € je nach Saison",
+          preis: lPreis99,
         },
       ],
     });
@@ -625,13 +630,13 @@ export class Wohnmobileliste extends Component {
                       />
                     </p>
                     <p> {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}</p>
-                    <p> {Wohnmobil.preis}</p>
+                    <p>{Wohnmobil.preis}</p>
                     <p>
                       <ButtonToolbar>
                         <ButtonGroup vertical>
                           {" "}
                           <Wohnmobilreservieren
-                            titel={"Wohnmobil reservieren"}
+                            titel={"Reservierung zur Zeit nicht möglich"}
                             id={Wohnmobil.id}
                           />
                         </ButtonGroup>
@@ -677,13 +682,13 @@ export class Wohnmobileliste extends Component {
                     {GetKleineTabelleUebersicht(Wohnmobil.ausstattung)}
                   </td>
                   <td class="col-2">
-                    <p>{Wohnmobil.preis}</p>
+                    <p class="eilmeldung">{Wohnmobil.preis}</p>
                     <p>
                       <ButtonToolbar>
                         <ButtonGroup vertical>
                           {" "}
                           <Wohnmobilreservieren
-                            titel={"Wohnmobil reservieren"}
+                            titel={"Reservierung zur Zeit nicht möglich"}
                             id={Wohnmobil.id}
                           />
                         </ButtonGroup>
