@@ -14,7 +14,7 @@ export class Footer extends Component {
               <Col>
                 <a href="./impressum">
                   <div className="main-footer">
-                    {lJahr} Cube-Wohnmobile-Impressum
+                    {lJahr} Cube-Wohnmobile Impressum
                   </div>
                 </a>
               </Col>
@@ -22,7 +22,7 @@ export class Footer extends Component {
               <Col>
                 <a href="./datenschutz">
                   {" "}
-                  <div className="main-footer">Datenschutz </div>
+                  <div className="main-footer">Datenschutz</div>
                 </a>
               </Col>
             </Row>

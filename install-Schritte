@@ -1,3 +1,6 @@
+node.js / npm installieren / untiteld workspace darunter dann Verzeichnis - Terminal im Verzeichnis von yafrn.lock
+
+npm i yarn
 
 npx create-react-app cubewm
 cd cubewm
@@ -11,3 +14,8 @@ sudo yarn add react-bootstrap bootstrap
 sudo yarn add react-image-gallery
 
 yarn run start
+
+
+
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
