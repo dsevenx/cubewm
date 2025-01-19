@@ -16,6 +16,7 @@ sudo yarn add react-image-gallery
 yarn run start
 
 
+----------------------------------------------
 
 git config --global user.email "you@example.com"
   git config --global user.name "Your Name"

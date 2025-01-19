@@ -6,14 +6,16 @@ import IMG_3 from "../assets/IMG_3.png";
 
 export class Startkarten extends Component {
   render() {
+    const lJahr = new Date().getFullYear();
+  
     return (
       <div className="mt-5 d-flex justify-content-middle">
         <Container>
           <Row className="mr-3 mb-3">
             <Col>
               <div className="eilmeldung">
-                Aktuell: Es sind alle Wohnmobile für das ganz Jahr 2024
-                vermietet.
+                Aktuell: Es sind alle Wohnmobile für das ganz Jahr {lJahr}
+                {" "}vermietet.
               </div>
               <h3>
                 Entdecke unvergessliche Abenteuer mit Cube-Wohnmobile! Unsere
